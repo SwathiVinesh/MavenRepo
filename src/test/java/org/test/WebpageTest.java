@@ -16,15 +16,15 @@ public class WebpageTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         Thread.sleep(2000);
-        driver.get("https://sauravsarkar-codersarcade.github.io/CA-MVN/");
+        driver.get("https://swathivinesh.github.io/Devops_Lab/");
     }
 
     @Test
     public void titleValidationTest() {
         String actualTitle = driver.getTitle();
-        String expectedTitle = "Tripillar Solutions";
+        String expectedTitle = "My Simple Website";
         Assert.assertEquals(actualTitle, expectedTitle);
-        Assert.assertTrue(true, "Title should contain 'Tripillar'");
+        Assert.assertTrue(true, "Title should contain 'Simple'");
     }
 
     @AfterTest
